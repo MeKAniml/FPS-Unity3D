@@ -14,8 +14,13 @@ public class Scripts : MonoBehaviour
         if(col.name == "Zone de boss"){
             print("Le boss spawn")
         }
+        
         if(col.name == "Niveau suivant"){
             print("Passage au prochain niveau")
+        }
+         
+        if(col.name == "Pack de soin"){
+            print("Soigné")
         }
     } 
 
