@@ -14,49 +14,102 @@ public class Inputs : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     
+    
+    //Touche Z
     if (Input.GetKeyDown(KeyCode.Z))
         {
-            Debug.Log("Touche Z dÈtectÈe");
+            Debug.Log("Touche Z d√©tect√©e");
         }
 
         if (Input.GetKey(KeyCode.Z))
         {
-            Debug.Log("Touche Z dÈtectÈe, appui long");
+            Debug.Log("Touche Z d√©tect√©e, appui long");
         }
 
         if (Input.GetKeyUp(KeyCode.Z))
         {
-            Debug.Log("Touche Z relachÈe");
+            Debug.Log("Touche Z relach√©e");
         }
         
-        if (Input.GetMouseButtonDown(0)) // clic souris gauche, marche comme GetKey
-        {
-            Debug.Log("clic gauche dÈtectÈ");
-        }
-       
         
-        // GetAxis: pour rÈcupÈrer les axes, permet d'enregistrer les mvts de la souris
-        // Axe horizontal
-        if (Input.GetAxis("Mouse X") > 0) // dÈplacement vers la droite
+          //Touche Q
+    if (Input.GetKeyDown(KeyCode.Q))
         {
-            Debug.Log("La souris se dÈplace ver la droite.");
+            Debug.Log("Touche Q d√©tect√©e");
         }
 
-        if (Input.GetAxis("Mouse X") < 0) // dÈplacement vers la gauche
+        if (Input.GetKey(KeyCode.Q))
         {
-            Debug.Log("La souris se dÈplace ver la gauche.");
+            Debug.Log("Touche Q d√©tect√©e, appui long");
+        }
+
+        if (Input.GetKeyUp(KeyCode.Q))
+        {
+            Debug.Log("Touche Q relach√©e");
+        }
+          
+       
+         //Touche S
+    if (Input.GetKeyDown(KeyCode.S))
+        {
+            Debug.Log("Touche S d√©tect√©e");
+        }
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            Debug.Log("Touche S d√©tect√©e, appui long");
+        }
+
+        if (Input.GetKeyUp(KeyCode.S))
+        {
+            Debug.Log("Touche S relach√©e");
+        }
+
+       
+          //Touche D
+    if (Input.GetKeyDown(KeyCode.D))
+        {
+            Debug.Log("Touche D d√©tect√©e");
+        }
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            Debug.Log("Touche D d√©tect√©e, appui long");
+        }
+
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            Debug.Log("Touche D relach√©e");
+        }
+        
+        
+        //Clic Gauche
+          if (Input.GetMouseButtonDown(0)) 
+        {
+            Debug.Log("clic gauche d√©tect√©");
+        }
+    
+        //Camera
+        // Axe horizontal
+        if (Input.GetAxis("Mouse X") > 0) // d√©placement vers la droite
+        {
+            Debug.Log("La souris se d√©place ver la droite.");
+        }
+
+        if (Input.GetAxis("Mouse X") < 0) // d√©placement vers la gauche
+        {
+            Debug.Log("La souris se d√©place ver la gauche.");
         }
 
         // Axe vertical
-        if (Input.GetAxis("Mouse Y") > 0) // dÈplacement vers le haut
+        if (Input.GetAxis("Mouse Y") > 0) // d√©placement vers le haut
         {
-            Debug.Log("La souris se dÈplace vers le haut.");
+            Debug.Log("La souris se d√©place vers le haut.");
         }
 
-        if (Input.GetAxis("Mouse Y") < 0) // dÈplacement vers le bas
+        if (Input.GetAxis("Mouse Y") < 0) // d√©placement vers le bas
         {
-            Debug.Log("La souris se dÈplace vers le bas.");
+            Debug.Log("La souris se d√©place vers le bas.");
         }
     }
 }
