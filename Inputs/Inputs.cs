@@ -15,7 +15,7 @@ public class Inputs : MonoBehaviour
     void Update()
     {
     
-    //Touche Z
+    //Touche Z (Avancer)
     if (Input.GetKeyDown(KeyCode.Z))
         {
             Debug.Log("Touche Z détectée");
@@ -32,7 +32,7 @@ public class Inputs : MonoBehaviour
         }
         
         
-          //Touche Q
+          //Touche Q (Aller à gauche)
     if (Input.GetKeyDown(KeyCode.Q))
         {
             Debug.Log("Touche Q détectée");
@@ -49,7 +49,7 @@ public class Inputs : MonoBehaviour
         }
           
        
-         //Touche S
+         //Touche S 5aller en arrière)
     if (Input.GetKeyDown(KeyCode.S))
         {
             Debug.Log("Touche S détectée");
@@ -66,8 +66,8 @@ public class Inputs : MonoBehaviour
         }
 
        
-          //Touche D
-    if (Input.GetKeyDown(KeyCode.D))
+          //Touche D (Aller a droite)
+    if (Input.GetKeyDown(KeyCode.D)) 
         {
             Debug.Log("Touche D détectée");
         }
@@ -82,8 +82,23 @@ public class Inputs : MonoBehaviour
             Debug.Log("Touche D relachée");
         }
         
+              //Touche R  (Recharger)
+    if (Input.GetKeyDown(KeyCode.R))
+        {
+            Debug.Log("Touche R détectée");
+        }
+
+        if (Input.GetKey(KeyCode.R))
+        {
+            Debug.Log("Touche R détectée, appui long");
+        }
+
+        if (Input.GetKeyUp(KeyCode.R))
+        {
+            Debug.Log("Touche R relachée");
+        }
         
-        //Clic Gauche
+        //Clic Gauche (Tirer)
           if (Input.GetMouseButtonDown(0)) 
         {
             Debug.Log("clic gauche détecté");
