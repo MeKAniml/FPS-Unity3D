@@ -22,6 +22,14 @@ public class Scripts : MonoBehaviour
         if(col.name == "Pack de soin"){
             print("Soigné")
         }
+        
+        if(col.name == "Trap"){
+            print("Vous êtes piégé")
+        }
+        
+        if(col.name == "Mun"){
+            print("Arme rechargé")
+        }
     } 
 
     // Update is called once per frame
